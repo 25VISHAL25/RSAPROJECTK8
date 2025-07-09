@@ -83,6 +83,8 @@ jobs:
           tenant-id: ${{ secrets.ARM_TENANT_ID }}
           subscription-id: ${{ secrets.ARM_SUBSCRIPTION_ID }}
           client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
+          auth-type: 'OIDC'
+
   
       - name: Set AKS context
         uses: azure/aks-set-context@v3
